@@ -1,3 +1,13 @@
-theme: jekyll-theme-minimal
 title: Yunpu Zeng
-description: PhD Student in Industrial Engineering at Georgia Tech
+
+logo: /IMG_1337.JPG
+
+description: >
+  PhD Student in Industrial Engineering<br>
+  Georgia Institute of Technology<br><br>
+  Healthcare Operations · Disease Modeling · Microsimulation<br><br>
+  <a href="https://github.com/Yunpuzeng">GitHub</a> ·
+  <a href="https://orcid.org/0009-0004-7652-3358">ORCID</a>
+
+show_downloads: false
+theme: jekyll-theme-minimal
