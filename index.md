@@ -2,10 +2,6 @@
 layout: default
 ---
 
-# Yunpu Zeng
-
-PhD Student in Industrial Engineering at Georgia Institute of Technology
-
 ## About Me
 
 I am a PhD student in Industrial Engineering at Georgia Tech. My research focuses on healthcare operations, disease modeling, microsimulation, and data analytics.
