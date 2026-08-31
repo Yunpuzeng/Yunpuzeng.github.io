@@ -12,6 +12,8 @@ My current work includes Long COVID modeling, alcohol-related disease microsimul
 
 Outside of research, I enjoy painting, playing the piano, and exploring robotics. 🎨 🎹 🤖
 
+📄 [Curriculum Vitae](/CV_Yunpu_Zeng_7_7.pdf)
+
 ---
 
 ## Research Interests
