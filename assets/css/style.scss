@@ -384,53 +384,221 @@ section hr {
 }
 
 /* =========================================================
-   HOBBIES / PHOTO GALLERY
+   PAINTING GALLERY
    ========================================================= */
 
-.hobby-feature {
-  margin: 18px 0 30px;
+.gallery-hint {
+  margin-top: -4px;
+  margin-bottom: 14px;
+  color: #777;
+  font-size: 13px;
 }
 
-.hobby-feature img {
+/* Horizontal scrolling thumbnail gallery */
+
+.painting-strip {
+  display: flex;
+  gap: 12px;
+
   width: 100%;
-  max-height: 380px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 12px;
+  overflow-x: auto;
+
+  padding: 4px 2px 14px;
+  margin-bottom: 34px;
+
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
 }
 
-.hobby-feature p {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
+.painting-thumb {
+  flex: 0 0 155px;
+
+  height: 125px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 12px;
+
+  background: transparent;
+  cursor: pointer;
+
+  overflow: hidden;
+  scroll-snap-align: start;
 }
 
-.art-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.art-gallery img {
+.painting-thumb img {
   width: 100%;
-  height: 280px;
+  height: 100%;
+
+  display: block;
+
   object-fit: cover;
-  border-radius: 14px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
-.art-gallery img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+.painting-thumb:hover img {
+  transform: scale(1.04);
+  opacity: 0.92;
 }
+
+
+/* =========================================================
+   PAINTING LIGHTBOX
+   ========================================================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+
+  background: rgba(20, 20, 20, 0.88);
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-image {
+  display: block;
+
+  max-width: min(900px, 85vw);
+  max-height: 85vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Close button */
+
+.lightbox-close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+
+  border: 0;
+  background: transparent;
+  color: white;
+
+  font-size: 42px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+
+/* Previous / Next */
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 60px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.10);
+  color: white;
+
+  font-size: 42px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.lightbox-prev {
+  left: 24px;
+}
+
+.lightbox-next {
+  right: 24px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   ROBOTICS
+   ========================================================= */
+
+.robotics-photo {
+  margin: 16px 0 34px;
+}
+
+.robotics-photo img {
+  display: block;
+
+  width: 100%;
+  max-height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+}
+
+
+/* =========================================================
+   GALLERY MOBILE
+   ========================================================= */
 
 @media screen and (max-width: 600px) {
-  .art-gallery {
-    grid-template-columns: 1fr;
+
+  .painting-thumb {
+    flex-basis: 125px;
+    height: 105px;
   }
 
-  .art-gallery img {
-    height: auto;
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox-image {
+    max-width: 92vw;
+    max-height: 78vh;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 42px;
+    height: 52px;
+
+    font-size: 34px;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 18px;
   }
 }
