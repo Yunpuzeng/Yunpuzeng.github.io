@@ -1,0 +1,113 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Overall page */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Make the page wider */
+.wrapper {
+  width: 1050px;
+  max-width: 90%;
+}
+
+/* Sidebar */
+header {
+  width: 250px;
+}
+
+/* Main content */
+section {
+  width: 700px;
+}
+
+/* Profile photo */
+header img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Name */
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Main section headings */
+section h2 {
+  margin-top: 40px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #B3A369;
+  font-size: 24px;
+}
+
+/* Research project titles */
+section h3 {
+  margin-top: 28px;
+  font-size: 19px;
+}
+
+/* Links */
+a {
+  color: #8B702A;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 16px;
+}
+
+/* Lists */
+ul {
+  margin-bottom: 20px;
+}
+
+/* Horizontal separators */
+hr {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 35px 0;
+}
+
+/* CV button */
+.cv-button {
+  display: inline-block;
+  padding: 9px 16px;
+  margin-top: 8px;
+  border: 1px solid #B3A369;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media print, screen and (max-width: 960px) {
+  .wrapper {
+    width: auto;
+    max-width: 90%;
+  }
+
+  header,
+  section {
+    width: auto;
+    float: none;
+    position: static;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+}
