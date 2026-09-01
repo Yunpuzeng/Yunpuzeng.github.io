@@ -411,9 +411,8 @@ section hr {
 }
 
 .painting-thumb {
-  flex: 0 0 155px;
-
-  height: 125px;
+  flex: 0 0 210px;
+  height: 165px;
   padding: 0;
 
   border: 0;
@@ -568,8 +567,8 @@ section hr {
 @media screen and (max-width: 600px) {
 
   .painting-thumb {
-    flex-basis: 125px;
-    height: 105px;
+    flex-basis: 155px;
+    height: 125px;
   }
 
   .lightbox {
