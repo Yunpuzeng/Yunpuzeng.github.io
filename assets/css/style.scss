@@ -212,3 +212,79 @@ ul {
     margin-top: 0;
   }
 }
+
+/* ===== FIX TWO-COLUMN LAYOUT ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1180px;
+  max-width: calc(100% - 48px);
+  margin: 40px auto;
+
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+/* Left profile card */
+header {
+  width: auto;
+  float: none;
+  position: sticky;
+  top: 30px;
+
+  padding: 28px 24px;
+  margin: 0;
+
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Right content card */
+section {
+  width: auto;
+  min-width: 0;
+  float: none;
+
+  padding: 38px 46px;
+  margin: 0;
+
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Remove old Minimal theme layout behavior */
+header,
+section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Mobile */
+@media screen and (max-width: 900px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    max-width: 92%;
+    gap: 20px;
+    margin: 24px auto;
+  }
+
+  header {
+    position: static;
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    padding: 28px 24px;
+  }
+}
