@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<nav class="site-nav">
+  <a href="#about-me">About</a> ·
+  <a href="#research">Research</a> ·
+  <a href="#publications">Publications</a> ·
+  <a href="/CV_Yunpu_Zeng_7_7.pdf">CV</a> ·
+  <a href="#contact">Contact</a>
+</nav>
 
 ## About Me
 
