@@ -382,3 +382,55 @@ section hr {
     height: 145px;
   }
 }
+
+/* =========================================================
+   HOBBIES / PHOTO GALLERY
+   ========================================================= */
+
+.hobby-feature {
+  margin: 18px 0 30px;
+}
+
+.hobby-feature img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.hobby-feature p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.art-gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.art-gallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+@media screen and (max-width: 600px) {
+  .art-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .art-gallery img {
+    height: auto;
+  }
+}
