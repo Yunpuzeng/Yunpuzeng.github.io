@@ -37,10 +37,6 @@ I develop individual-level microsimulation models to study alcohol consumption, 
 
 Current applications include cirrhosis progression, alcohol-attributable mortality, esophageal cancer, and intervention evaluation.
 
-### Flu Hospitalization Forecasting
-
-I worked on probabilistic forecasting of seasonal influenza hospitalizations using epidemiological models, Google search trends, and real-time data assimilation.
-
 ### Intra-Subject Respiratory Motion Modeling Using a Diffeomorphic Approach
 
 <p class="research-tags">
@@ -108,3 +104,26 @@ The workflow included:
 The resulting model demonstrated good segmentation of the **trachea and major bronchial branches**, with generally strong connectivity and anatomical accuracy on the validation CT scans, while also highlighting the greater difficulty of preserving connectivity in smaller peripheral bronchi.
 
 [📄 Read the paper on arXiv](https://arxiv.org/abs/2209.10796)
+
+### Flu Hospitalization Forecasting
+
+<p class="research-tags">
+  Epidemiological Modeling · Forecasting · SIRS · Extended Kalman Filter · Time Series
+</p>
+
+This project focused on probabilistic forecasting of **seasonal influenza hospitalizations** by combining epidemiological modeling with real-time data sources, including Google search trends.
+
+I worked with a compartmental **SIRS model** together with an **Extended Kalman Filter (EKF)** to improve state estimation and dynamically update hospitalization forecasts as new observations became available.
+
+The broader forecasting framework explored multiple modeling approaches, including:
+
+- Naive forecasting strategies
+- Compartmental epidemiological models
+- Statistical time-series methods
+- Machine learning approaches
+- Temporal deep-learning models
+- Multivariable temporal forecasting models
+
+My work focused particularly on integrating the SIRS model with the EKF for real-time data assimilation, allowing the latent epidemic states to be continuously updated while accounting for uncertainty and noisy observations.
+
+The project also involved processing and correcting CDC flu hospitalization data to support more reliable forecasting and evaluation.
