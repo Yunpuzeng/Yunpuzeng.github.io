@@ -31,11 +31,114 @@ I develop population-level and state-transition models to characterize Long COVI
 
 My work links acute COVID-19 dynamics with post-acute symptom trajectories and individual-level simulation to study incidence, prevalence, symptom trajectories, and persistent disease burden.
 
-### Alcohol-Related Disease Microsimulation
+### Drinking-Behavior-Driven Microsimulation for Alcohol-Related Disease Progression
 
-I develop individual-level microsimulation models to study alcohol consumption, disease progression, mortality, and healthcare interventions.
+<p class="research-tags">
+  Microsimulation · Alcohol Use · Disease Progression · Population Health · Intervention Evaluation
+</p>
 
-Current applications include cirrhosis progression, alcohol-attributable mortality, esophageal cancer, and intervention evaluation.
+**Ongoing Research Program · 2024–Present**
+
+This is an ongoing research program centered on an individual-level microsimulation framework that links **drinking behavior, chronic disease progression, mortality, and healthcare interventions**.
+
+Rather than treating alcohol-related diseases as isolated outcomes, the framework follows individuals across heterogeneous drinking-risk states and disease trajectories over time. It is designed to study how changes in alcohol consumption influence long-term health outcomes across U.S. birth cohorts and to evaluate interventions aimed at reducing alcohol-related disease burden.
+
+The framework has continued to evolve as new disease pathways, mortality risks, and intervention strategies are incorporated.
+
+<div class="research-program">
+
+  <div class="research-stage" markdown="1">
+
+  <div class="research-stage-number">01 · Natural History</div>
+
+  #### Cirrhosis Progression & Alcohol-Related Mortality
+
+  <div class="research-stage-date">2025–2026</div>
+
+  I developed a natural-history state-transition model for **alcohol-related cirrhosis**, linking drinking-risk states with progressive liver disease pathways.
+
+  The model was subsequently extended beyond liver-specific outcomes to incorporate a broader set of **alcohol-attributable causes of death**, including:
+
+  - Cancer
+  - Cardiovascular disease
+  - Unintentional injuries
+  - Other competing mortality risks
+
+  By integrating drinking behavior, liver disease progression, and competing alcohol-related mortality pathways within the same microsimulation framework, this extension provides a more comprehensive representation of the long-term population health burden associated with alcohol use.
+
+  The model is used to examine how heterogeneous drinking patterns and disease trajectories contribute to mortality over time and across different U.S. birth cohorts.
+
+  <div class="research-poster">
+
+    <div class="poster-heading">
+      <span>Project Poster</span>
+      <span class="poster-hint">Click to view full size ↗</span>
+    </div>
+
+    <a href="/poster1.png" target="_blank">
+      <img
+        src="/poster1.png"
+        alt="Alcohol-Related Mortality research poster">
+    </a>
+
+  </div>
+
+  </div>
+
+
+  <div class="research-stage" markdown="1">
+
+  <div class="research-stage-number">02 · Disease Extension</div>
+
+  #### Esophageal Cancer Progression
+
+  <div class="research-stage-date">2025</div>
+
+  The drinking-behavior-driven microsimulation framework was extended to study **alcohol-related esophageal squamous cell carcinoma**.
+
+  I modeled disease progression across a sequence of health states, including:
+
+  - Normal tissue
+  - Dysplasia
+  - Early-stage esophageal cancer
+  - Late-stage esophageal cancer
+  - Mortality
+
+  The model was used to evaluate long-term cancer incidence and mortality across U.S. birth cohorts while preserving heterogeneous drinking behaviors within the underlying simulation framework.
+
+  This extension demonstrated how the same drinking-behavior structure could be adapted to different alcohol-related disease pathways rather than being limited to liver disease alone.
+
+  </div>
+
+
+  <div class="research-stage" markdown="1">
+
+  <div class="research-stage-number">03 · Intervention Evaluation</div>
+
+  #### Alcohol-Use Reduction Interventions
+
+  <div class="research-stage-date">2026–Present</div>
+
+  The current phase of the research program focuses on evaluating interventions designed to reduce alcohol consumption and its downstream health consequences.
+
+  Rather than modifying disease progression directly, the intervention framework acts on **transitions across drinking-risk states**, allowing treatment effects to propagate through subsequent disease and mortality pathways over time.
+
+  Current applications include:
+
+  - Mindfulness-based interventions
+  - Pharmacologic interventions for alcohol use disorder
+  - Semaglutide-based alcohol-use reduction
+  - Alternative treatment-duration strategies
+  - Long-term effects on alcohol-related disease burden and mortality
+
+  A major focus of this work is understanding how the **timing, duration, and effectiveness of an intervention** influence population-level outcomes.
+
+  The framework also provides a foundation for future evaluation of intervention value through **cost-effectiveness analysis**.
+
+  </div>
+
+</div>
+
 
 ### Intra-Subject Respiratory Motion Modeling Using a Diffeomorphic Approach
 
