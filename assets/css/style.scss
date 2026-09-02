@@ -697,3 +697,132 @@ section hr {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
 }
+
+/* =========================================================
+   RESEARCH PROGRAM TIMELINE
+   ========================================================= */
+
+.research-program {
+  margin: 28px 0 42px;
+  padding-left: 30px;
+
+  border-left: 2px solid #dfd3b4;
+}
+
+.research-stage {
+  position: relative;
+
+  margin-bottom: 44px;
+}
+
+.research-stage:last-child {
+  margin-bottom: 0;
+}
+
+.research-stage::before {
+  content: "";
+
+  position: absolute;
+  left: -37px;
+  top: 7px;
+
+  width: 12px;
+  height: 12px;
+
+  background: #927020;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 1px #dfd3b4;
+}
+
+.research-stage-number {
+  margin-bottom: 4px;
+
+  color: #927020;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.research-stage-date {
+  margin-top: -3px;
+  margin-bottom: 16px;
+
+  color: #888888;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   RESEARCH POSTER
+   ========================================================= */
+
+.research-poster {
+  margin: 26px 0 12px;
+}
+
+.poster-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  color: #444444;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.poster-hint {
+  color: #999999;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.research-poster img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border: 1px solid #ebe6d9;
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.research-poster img:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Timeline on mobile */
+
+@media screen and (max-width: 600px) {
+
+  .research-program {
+    padding-left: 24px;
+  }
+
+  .research-stage::before {
+    left: -31px;
+  }
+
+  .poster-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
