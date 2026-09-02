@@ -41,9 +41,50 @@ Current applications include cirrhosis progression, alcohol-attributable mortali
 
 I worked on probabilistic forecasting of seasonal influenza hospitalizations using epidemiological models, Google search trends, and real-time data assimilation.
 
-### Respiratory Motion Modeling
+### Intra-Subject Respiratory Motion Modeling Using a Diffeomorphic Approach
 
-I developed computational approaches for modeling respiratory motion using 4D CT imaging, deformable vector fields, image registration, and optimization methods.
+<p class="research-tags">
+  Medical Imaging · 4D CT · Image Registration · Diffeomorphic Modeling · Optimization
+</p>
+
+Respiratory motion creates an important challenge for image-guided lung interventions. A conventional static CT scan captures the anatomy at only one moment in the respiratory cycle, while lung tissue, vessels, and potential biopsy targets continuously move as a patient breathes.
+
+In this project, we developed a computational framework for modeling **patient-specific respiratory motion from 4D CT images**. The goal was to reconstruct the dynamic motion of lung regions across respiratory phases and provide more informative motion estimates for applications such as image-guided lung biopsy.
+
+The modeling pipeline included:
+
+- Extracting anatomical information from **4D CT images** across different respiratory phases
+- Constructing point-cloud representations of lung structures and identifying anatomical landmarks for motion correspondence
+- Using **affine transformations** to characterize global respiratory motion between image phases
+- Fitting correspondence models using both **linear and nonlinear least-squares optimization**
+- Representing local tissue deformation using **deformable vector fields (DVFs)**
+- Applying a **diffeomorphic modeling framework** to preserve smooth and anatomically meaningful transformations
+- Comparing the derived motion fields with reference vector fields to evaluate motion-model accuracy
+
+A key part of the project was developing and validating DVFs that describe how individual regions of the lung move during respiration. These motion fields provide a continuous representation of tissue displacement and can potentially help estimate the location of anatomical targets when direct imaging information is limited.
+
+The project began as my undergraduate senior project at **Sichuan University–Pittsburgh Institute** and later developed into a peer-reviewed conference publication.
+
+<a class="paper-button"
+   href="https://link.springer.com/chapter/10.1007/978-3-031-84460-7_19"
+   target="_blank">
+   📄 Springer Publication
+</a>
+
+<div class="research-poster">
+
+  <div class="poster-heading">
+    <span>Project Poster</span>
+    <span class="poster-hint">Click to view full size ↗</span>
+  </div>
+
+  <a href="/poster.png" target="_blank">
+    <img
+      src="/poster.png"
+      alt="Intra-Subject Respiratory Motion Modeling project poster">
+  </a>
+
+</div>
 
 ### Airway Tree Segmentation Using U²-Net
 <p class="research-tags">
