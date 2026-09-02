@@ -610,3 +610,90 @@ section hr {
   font-weight: 600;
   letter-spacing: 0.2px;
 }
+
+/* =========================================================
+   RESEARCH PROJECTS
+   ========================================================= */
+
+.research-tags {
+  margin-top: -4px;
+  margin-bottom: 18px;
+
+  color: #927020;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+
+/* Publication button */
+
+.paper-button {
+  display: inline-block;
+
+  margin: 8px 0 24px;
+  padding: 9px 16px;
+
+  border: 1px solid #d7bd7b;
+  border-radius: 999px;
+
+  background: #fffdf8;
+  color: #80611d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.paper-button:hover {
+  background: #f7f0df;
+  color: #6f5416;
+  transform: translateY(-1px);
+}
+
+
+/* Research poster */
+
+.research-poster {
+  margin: 12px 0 38px;
+}
+
+.poster-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.poster-hint {
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.research-poster img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border: 1px solid #ece8df;
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.research-poster img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
