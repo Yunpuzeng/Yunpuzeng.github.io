@@ -826,3 +826,28 @@ section hr {
     gap: 2px;
   }
 }
+
+/* =========================================================
+   RESEARCH HIGHLIGHTS
+   ========================================================= */
+
+.research-highlight {
+  margin: 24px 0;
+  padding: 18px 22px;
+
+  background: #fffdf8;
+
+  border: 1px solid #e5d9b8;
+  border-left: 4px solid #927020;
+  border-radius: 10px;
+
+  color: #444444;
+}
+
+.research-highlight p {
+  margin-bottom: 8px;
+}
+
+.research-highlight strong {
+  color: #333333;
+}
