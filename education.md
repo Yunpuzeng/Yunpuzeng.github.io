@@ -18,49 +18,63 @@ My academic journey has taken me from **Chengdu to Atlanta**, with Industrial En
 
 <div class="education-timeline">
 
-  <div class="education-item">
+ <div class="education-item">
 
   <div class="education-year">2025 – Present</div>
 
-  ### Georgia Institute of Technology
+  <h3>Georgia Institute of Technology</h3>
 
-  **Ph.D. in Industrial Engineering**  
-  Atlanta, Georgia
+  <p class="education-degree">
+    <strong>Ph.D. in Industrial Engineering</strong><br>
+    Atlanta, Georgia
+  </p>
 
-  I am currently pursuing my Ph.D. in Industrial Engineering at Georgia Tech, where my research focuses on healthcare modeling, disease progression, microsimulation, and population-level decision making.
+  <p>
+    I am currently pursuing my Ph.D. in Industrial Engineering at Georgia Tech,
+    where my research focuses on healthcare modeling, disease progression,
+    microsimulation, and population-level decision making.
+  </p>
 
-  </div>
-
+</div>
 
   <div class="education-item">
 
   <div class="education-year">2023 – 2024</div>
 
-  ### Georgia Institute of Technology
+  <h3>Georgia Institute of Technology</h3>
 
-  **M.S. in Industrial Engineering**  
-  Atlanta, Georgia
+  <p class="education-degree">
+    <strong>M.S. in Industrial Engineering</strong><br>
+    Atlanta, Georgia
+  </p>
 
-  I completed my master's degree in Industrial Engineering at Georgia Tech, where I continued developing my interests in quantitative modeling, simulation, and data-driven analysis.
+  <p>
+    I completed my master's degree in Industrial Engineering at Georgia Tech,
+    where I continued developing my interests in quantitative modeling,
+    simulation, and data-driven analysis.
+  </p>
 
-  </div>
-
+</div>
 
   <div class="education-item">
 
   <div class="education-year">2019 – 2023</div>
 
-  ### Sichuan University
+  <h3>Sichuan University</h3>
 
-  **B.S. in Industrial Engineering**  
-  Chengdu, China
+  <p class="education-degree">
+    <strong>B.S. in Industrial Engineering</strong><br>
+    Chengdu, China
+  </p>
 
-  My undergraduate studies introduced me to industrial engineering, optimization, simulation, and computational research. During this period, I also became involved in medical imaging research, including respiratory motion modeling and airway segmentation.
-
-  </div>
+  <p>
+    My undergraduate studies introduced me to industrial engineering,
+    optimization, simulation, and computational research. During this period,
+    I also became involved in medical imaging research, including respiratory
+    motion modeling and airway segmentation.
+  </p>
 
 </div>
-
 ---
 
 ## Teaching Experience
