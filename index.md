@@ -11,7 +11,7 @@ title: About
   <a href="/CV_Yunpu_Zeng_7_7.pdf" target="_blank">CV</a>
 </nav>
 
-## Hi, I'm Yunpu! 👋
+## Hi, I'm Yunpu!
 
 I was born and raised in **Chengdu, China** — a city I will always associate with good food, a relaxed pace of life, and home. 🐼
 
