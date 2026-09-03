@@ -1,0 +1,1023 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@import "{{ site.theme }}";
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f6f2;
+  color: #333333;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+a {
+  color: #927020;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6f5416;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.wrapper {
+  width: 1180px;
+  max-width: calc(100% - 48px);
+  margin: 40px auto;
+
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT SIDEBAR
+   ========================================================= */
+
+header {
+  width: auto;
+  float: none;
+  position: sticky;
+  top: 30px;
+
+  margin: 0;
+  padding: 30px 24px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 22px;
+  line-height: 1.05;
+  text-align: center;
+}
+
+header h1,
+header h1 a {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #927020;
+}
+
+header img {
+  display: block;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 24px;
+
+  object-fit: cover;
+  object-position: center 60%;
+
+  border-radius: 50%;
+}
+
+header p {
+  margin: 0 0 18px;
+
+  color: #484848;
+  font-size: 15px;
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+header p a {
+  color: #927020;
+  font-weight: 600;
+}
+
+header p.view,
+footer {
+  display: none;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT CARD
+   ========================================================= */
+
+section {
+  width: auto;
+  min-width: 0;
+  float: none;
+
+  margin: 0;
+  padding: 36px 48px 44px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 26px;
+
+  margin: 0 0 38px;
+  padding: 0 0 16px;
+
+  border-bottom: 1px solid #ebe6d9;
+}
+
+.site-nav a {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: #927020;
+}
+
+
+/* =========================================================
+   CONTENT TYPOGRAPHY
+   ========================================================= */
+
+section h2 {
+  margin: 0 0 18px;
+
+  color: #252525;
+
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+section h3 {
+  margin: 30px 0 8px;
+
+  color: #333333;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+section h4 {
+  margin: 8px 0 8px;
+
+  color: #333333;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+section p {
+  margin: 0 0 20px;
+}
+
+section ul {
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
+section li {
+  margin-bottom: 5px;
+}
+
+section hr {
+  margin: 34px 0;
+
+  border: 0;
+  border-top: 1px solid #ebe6d9;
+}
+
+
+/* =========================================================
+   SHARED BUTTONS
+   ========================================================= */
+
+.cv-button,
+.paper-button {
+  display: inline-block;
+
+  padding: 9px 17px;
+
+  border: 1px solid #d7bd7b;
+  border-radius: 999px;
+
+  background: #fffdf8;
+  color: #80611d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.cv-button {
+  margin-top: 8px;
+}
+
+.paper-button {
+  margin: 8px 0 24px;
+}
+
+.cv-button:hover,
+.paper-button:hover {
+  background: #f7f0df;
+  color: #6f5416;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   CONTACT BUTTONS
+   ========================================================= */
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+.contact-grid a {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border: 1px solid #ddd0aa;
+  border-radius: 999px;
+
+  background: #fffdf8;
+  color: #80611d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.contact-grid a:hover {
+  background: #f7f0df;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ABOUT: PAINTING GALLERY
+   ========================================================= */
+
+.gallery-hint {
+  margin-top: -4px;
+  margin-bottom: 14px;
+
+  color: #777777;
+  font-size: 13px;
+}
+
+.painting-strip {
+  display: flex;
+  gap: 12px;
+
+  width: 100%;
+  overflow-x: auto;
+
+  padding: 4px 2px 14px;
+  margin-bottom: 34px;
+
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.painting-thumb {
+  flex: 0 0 210px;
+
+  height: 165px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 12px;
+
+  background: transparent;
+  cursor: pointer;
+
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.painting-thumb img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.painting-thumb:hover img {
+  transform: scale(1.04);
+  opacity: 0.92;
+}
+
+
+/* =========================================================
+   ABOUT: LIGHTBOX
+   ========================================================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+
+  background: rgba(20, 20, 20, 0.88);
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-image {
+  display: block;
+
+  max-width: min(900px, 85vw);
+  max-height: 85vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 42px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 60px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+
+  font-size: 42px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.lightbox-prev {
+  left: 24px;
+}
+
+.lightbox-next {
+  right: 24px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   ABOUT: ROBOTICS
+   ========================================================= */
+
+.robotics-photo {
+  margin: 16px 0 34px;
+}
+
+.robotics-photo img {
+  display: block;
+
+  width: 100%;
+  max-height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+}
+
+
+/* =========================================================
+   RESEARCH: SHARED ELEMENTS
+   ========================================================= */
+
+.research-tags {
+  margin-top: -4px;
+  margin-bottom: 18px;
+
+  color: #927020;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.research-highlight {
+  margin: 24px 0;
+  padding: 18px 22px;
+
+  background: #fffdf8;
+
+  border: 1px solid #e5d9b8;
+  border-left: 4px solid #927020;
+  border-radius: 10px;
+
+  color: #444444;
+}
+
+.research-highlight p {
+  margin-bottom: 8px;
+}
+
+.research-highlight p:last-child {
+  margin-bottom: 0;
+}
+
+.research-highlight strong {
+  color: #333333;
+}
+
+
+/* =========================================================
+   RESEARCH: PROGRAM TIMELINE
+   ========================================================= */
+
+.research-program {
+  margin: 28px 0 42px;
+  padding-left: 30px;
+
+  border-left: 2px solid #dfd3b4;
+}
+
+.research-stage {
+  position: relative;
+
+  margin-bottom: 44px;
+}
+
+.research-stage:last-child {
+  margin-bottom: 0;
+}
+
+.research-stage::before {
+  content: "";
+
+  position: absolute;
+  left: -37px;
+  top: 7px;
+
+  width: 12px;
+  height: 12px;
+
+  background: #927020;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 1px #dfd3b4;
+}
+
+.research-stage-number {
+  margin-bottom: 4px;
+
+  color: #927020;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.research-stage-date {
+  margin-top: -3px;
+  margin-bottom: 16px;
+
+  color: #888888;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   RESEARCH: POSTERS
+   ========================================================= */
+
+.research-poster {
+  margin: 26px 0 12px;
+}
+
+.poster-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  color: #444444;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.poster-hint {
+  color: #999999;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.research-poster img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border: 1px solid #ebe6d9;
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.research-poster img:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   EDUCATION: TIMELINE
+   ========================================================= */
+
+.education-timeline {
+  margin: 28px 0 42px;
+  padding-left: 30px;
+
+  border-left: 2px solid #dfd3b4;
+}
+
+.education-item {
+  position: relative;
+
+  margin-bottom: 40px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-item::before {
+  content: "";
+
+  position: absolute;
+  left: -37px;
+  top: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  background: #927020;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 1px #dfd3b4;
+}
+
+.education-year {
+  margin-bottom: 3px;
+
+  color: #927020;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.education-item h3 {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.education-degree {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  color: #555555;
+}
+
+
+/* =========================================================
+   EDUCATION: TEACHING
+   ========================================================= */
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+
+  margin: 20px 0 36px;
+}
+
+.teaching-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  padding: 18px;
+
+  background: #fffdf8;
+
+  border: 1px solid #ebe3cd;
+  border-radius: 12px;
+}
+
+.teaching-card strong {
+  color: #333333;
+
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.teaching-card span {
+  color: #777777;
+
+  font-size: 13px;
+}
+
+.teaching-term {
+  color: #927020 !important;
+
+  font-size: 11px !important;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   EDUCATION: AWARDS
+   ========================================================= */
+
+.award-list {
+  display: grid;
+  gap: 12px;
+
+  margin: 18px 0 34px;
+}
+
+.award-item {
+  padding: 16px 18px;
+
+  background: #fffdf8;
+
+  border: 1px solid #ebe3cd;
+  border-radius: 12px;
+}
+
+.award-title {
+  color: #333333;
+  font-weight: 700;
+}
+
+.award-meta {
+  margin-top: 4px;
+
+  color: #777777;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
+.publication-card {
+  position: relative;
+
+  margin: 20px 0 34px;
+  padding: 24px 26px;
+
+  background: #fffdf8;
+
+  border: 1px solid #ebe3cd;
+  border-radius: 14px;
+}
+
+.publication-card h3 {
+  margin-top: 6px;
+  margin-bottom: 10px;
+
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.featured-publication {
+  border-left: 4px solid #927020;
+}
+
+.pub-year,
+.pub-status {
+  margin-bottom: 5px;
+
+  color: #927020;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.pub-status {
+  text-transform: uppercase;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin: 16px 0 12px;
+}
+
+.publication-links a {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 1px solid #d9c58e;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #80611d;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: background 0.15s ease;
+}
+
+.publication-links a:hover {
+  background: #f7f0df;
+}
+
+.pub-tags {
+  margin-top: 14px;
+
+  color: #927020;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+  .wrapper {
+    width: auto;
+    max-width: 92%;
+
+    margin: 22px auto;
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  header {
+    position: static;
+
+    width: 100%;
+    padding: 28px 22px;
+  }
+
+  header img {
+    width: 160px;
+    height: 160px;
+  }
+
+  header h1,
+  header h1 a {
+    font-size: 32px;
+  }
+
+  section {
+    width: 100%;
+    padding: 28px 24px 34px;
+  }
+
+  .site-nav {
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .site-nav a {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 27px;
+  }
+}
+
+
+/* =========================================================
+   SMALLER SCREENS
+   ========================================================= */
+
+@media screen and (max-width: 700px) {
+
+  .teaching-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-timeline,
+  .research-program {
+    padding-left: 24px;
+  }
+
+  .education-item::before,
+  .research-stage::before {
+    left: -31px;
+  }
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+  .painting-thumb {
+    flex-basis: 155px;
+    height: 125px;
+  }
+
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox-image {
+    max-width: 92vw;
+    max-height: 78vh;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 42px;
+    height: 52px;
+
+    font-size: 34px;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 18px;
+  }
+
+  .poster-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .publication-card {
+    padding: 20px;
+  }
+
+  .publication-card h3 {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONE
+   ========================================================= */
+
+@media screen and (max-width: 520px) {
+
+  .wrapper {
+    max-width: 94%;
+  }
+
+  header,
+  section {
+    border-radius: 14px;
+  }
+
+  section {
+    padding: 24px 20px 30px;
+  }
+
+  .site-nav {
+    gap: 13px;
+  }
+
+  header img {
+    width: 145px;
+    height: 145px;
+  }
+}
