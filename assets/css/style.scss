@@ -988,3 +988,98 @@ section hr {
     left: -31px;
   }
 }
+
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
+.publication-card {
+  position: relative;
+
+  margin: 20px 0 34px;
+  padding: 24px 26px;
+
+  background: #fffdf8;
+
+  border: 1px solid #ebe3cd;
+  border-radius: 14px;
+}
+
+.publication-card h3 {
+  margin-top: 6px;
+  margin-bottom: 10px;
+
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.featured-publication {
+  border-left: 4px solid #927020;
+}
+
+.pub-year,
+.pub-status {
+  margin-bottom: 5px;
+
+  color: #927020;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.pub-status {
+  text-transform: uppercase;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin: 16px 0 12px;
+}
+
+.publication-links a {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 1px solid #d9c58e;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #80611d;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.publication-links a:hover {
+  background: #f7f0df;
+}
+
+.pub-tags {
+  margin-top: 14px;
+
+  color: #927020;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+  .publication-card {
+    padding: 20px;
+  }
+
+  .publication-card h3 {
+    font-size: 19px;
+  }
+}
