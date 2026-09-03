@@ -46,26 +46,31 @@ Ultimately, this work aims to provide a more comprehensive understanding of the 
 
 <div class="research-highlight">
 
-**📄 Manuscript**
+  <p><strong>📄 Manuscript</strong></p>
 
-**“Population-Level Burden of Long COVID in the United States: A Wastewater-Informed Modeling Study”**
+  <p>
+    <strong>“Population-Level Burden of Long COVID in the United States:
+    A Wastewater-Informed Modeling Study”</strong>
+  </p>
 
-Manuscript submitted to **Nature Communications**.
+  <p>
+    Manuscript submitted to <strong><em>Nature Communications</em></strong>.
+  </p>
 
 </div>
-
 
 <div class="research-highlight">
 
-**🎤 Upcoming Presentation — 2026 INFORMS Annual Meeting**
+  <p><strong>🎤 Upcoming Presentation — 2026 INFORMS Annual Meeting</strong></p>
 
-**Session:** Epidemic Modeling and Public Health Response  
-**Date:** Wednesday, November 4, 2026  
-**Time:** 9:30–10:45 AM  
-**Location:** Moscone South 105, San Francisco
+  <p>
+    <strong>Session:</strong> Epidemic Modeling and Public Health Response<br>
+    <strong>Date:</strong> Wednesday, November 4, 2026<br>
+    <strong>Time:</strong> 9:30–10:45 AM<br>
+    <strong>Location:</strong> Moscone South 105, San Francisco
+  </p>
 
 </div>
-
 
 ### Drinking-Behavior-Driven Microsimulation for Alcohol-Related Disease Progression
 
