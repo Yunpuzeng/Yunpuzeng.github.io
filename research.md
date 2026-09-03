@@ -25,11 +25,47 @@ permalink: /research/
 
 ## Research
 
-### Long COVID Progression Modeling
+### Population-Level Modeling of Long COVID Burden
 
-I develop population-level and state-transition models to characterize Long COVID progression and estimate disease burden over time.
+<p class="research-tags">
+  Long COVID · Epidemiological Modeling · State-Transition Modeling · Population Health · Wastewater Surveillance
+</p>
 
-My work links acute COVID-19 dynamics with post-acute symptom trajectories and individual-level simulation to study incidence, prevalence, symptom trajectories, and persistent disease burden.
+**Ongoing Research · 2025–Present**
+
+Long COVID has created a substantial and persistent public health burden, but estimating its population-level impact remains challenging because reported COVID-19 cases do not fully capture the true scale of acute infections.
+
+My current research develops a **population-level modeling framework for Long COVID** that connects acute COVID-19 infection dynamics with post-acute disease progression and longer-term symptom burden.
+
+A major focus of this work is integrating **wastewater-informed estimates of SARS-CoV-2 transmission** with a state-transition framework for Long COVID. By combining population-level infection estimates with heterogeneous post-acute symptom trajectories, the model is designed to better characterize how Long COVID burden accumulates and evolves over time.
+
+The framework incorporates longitudinal symptom patterns informed by clinical evidence and follows individuals through different trajectories of persistent symptoms, improvement, recovery, or continued disease burden. These individual-level trajectories are then aggregated to estimate population-level outcomes such as Long COVID prevalence and active disease burden over calendar time.
+
+Ultimately, this work aims to provide a more comprehensive understanding of the long-term consequences of COVID-19 and to support future evaluation of healthcare needs and public health interventions.
+
+
+<div class="research-highlight">
+
+**📄 Manuscript**
+
+**“Population-Level Burden of Long COVID in the United States: A Wastewater-Informed Modeling Study”**
+
+Manuscript submitted to **Nature Communications**.
+
+</div>
+
+
+<div class="research-highlight">
+
+**🎤 Upcoming Presentation — 2026 INFORMS Annual Meeting**
+
+**Session:** Epidemic Modeling and Public Health Response  
+**Date:** Wednesday, November 4, 2026  
+**Time:** 9:30–10:45 AM  
+**Location:** Moscone South 105, San Francisco
+
+</div>
+
 
 ### Drinking-Behavior-Driven Microsimulation for Alcohol-Related Disease Progression
 
