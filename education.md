@@ -15,12 +15,16 @@ permalink: /education/
 <h2>Education</h2>
 
 <p>
-  My academic journey has taken me from <strong>Chengdu to Atlanta</strong>, with Industrial Engineering remaining at the center of how I think about systems, data, and decision making.
+  My academic journey has taken me from <strong>Chengdu to Atlanta</strong>,
+  with Industrial Engineering remaining at the center of how I think about
+  systems, data, and decision making.
 </p>
 
 <div class="education-timeline">
 
+  <!-- PhD -->
   <div class="education-item">
+
     <div class="education-year">2025 – Present</div>
 
     <h3>Georgia Institute of Technology</h3>
@@ -31,12 +35,46 @@ permalink: /education/
     </p>
 
     <p>
-      I am currently pursuing my Ph.D. in Industrial Engineering at Georgia Tech, where my research focuses on healthcare modeling, disease progression, microsimulation, and population-level decision making.
+      My doctoral research focuses on healthcare modeling, disease progression,
+      microsimulation, and population-level decision making.
     </p>
+
+    <div class="degree-highlights">
+      <div class="degree-highlights-title">Selected Highlights</div>
+
+      <div class="degree-highlight">
+        <strong>Long COVID Population-Level Modeling</strong>
+        <span>
+          Developing a multi-phase modeling framework linking acute COVID-19
+          dynamics, wastewater-informed infection estimates, and post-acute
+          disease burden.
+        </span>
+      </div>
+
+      <div class="degree-highlight">
+        <strong>Alcohol-Related Disease Microsimulation</strong>
+        <span>
+          Building an individual-level microsimulation framework to study
+          drinking behavior, chronic disease progression, mortality, and
+          healthcare interventions.
+        </span>
+      </div>
+
+      <div class="degree-highlight">
+        <strong>Intervention & Cost-Effectiveness Modeling</strong>
+        <span>
+          Evaluating treatment effectiveness, duration, and long-term
+          population health outcomes for alcohol-use interventions.
+        </span>
+      </div>
+    </div>
+
   </div>
 
 
+  <!-- MS -->
   <div class="education-item">
+
     <div class="education-year">2023 – 2024</div>
 
     <h3>Georgia Institute of Technology</h3>
@@ -47,12 +85,29 @@ permalink: /education/
     </p>
 
     <p>
-      I completed my master's degree in Industrial Engineering at Georgia Tech, where I continued developing my interests in quantitative modeling, simulation, and data-driven analysis.
+      During my master's studies, I further developed my interests in
+      simulation, statistical modeling, epidemiology, and data-driven analysis.
     </p>
+
+    <div class="degree-highlights">
+      <div class="degree-highlights-title">Selected Highlight</div>
+
+      <div class="degree-highlight">
+        <strong>Flu Hospitalization Forecasting</strong>
+        <span>
+          Worked on probabilistic forecasting of seasonal influenza
+          hospitalizations using Google search trends, a compartmental SIRS
+          model, and an Extended Kalman Filter for real-time data assimilation.
+        </span>
+      </div>
+    </div>
+
   </div>
 
 
+  <!-- BS -->
   <div class="education-item">
+
     <div class="education-year">2019 – 2023</div>
 
     <h3>Sichuan University</h3>
@@ -63,8 +118,40 @@ permalink: /education/
     </p>
 
     <p>
-      My undergraduate studies introduced me to industrial engineering, optimization, simulation, and computational research. During this period, I also became involved in medical imaging research, including respiratory motion modeling and airway segmentation.
+      My undergraduate studies introduced me to industrial engineering,
+      optimization, simulation, and computational research, while also leading
+      me into medical imaging and biomedical applications.
     </p>
+
+    <div class="degree-highlights">
+      <div class="degree-highlights-title">Selected Highlights</div>
+
+      <div class="degree-highlight">
+        <strong>Respiratory Motion Modeling</strong>
+        <span>
+          Developed a 4D CT-based framework for patient-specific respiratory
+          motion modeling using affine transformations, deformable vector
+          fields, and optimization methods.
+        </span>
+      </div>
+
+      <div class="degree-highlight">
+        <strong>Airway Tree Segmentation</strong>
+        <span>
+          Worked on deep-learning-based airway segmentation from chest CT scans
+          using U²-Net and Dice loss.
+        </span>
+      </div>
+
+      <div class="degree-highlight">
+        <strong>Undergraduate Recognition</strong>
+        <span>
+          Received the National Scholarship and recognition for an outstanding
+          capstone project and outstanding graduation performance.
+        </span>
+      </div>
+    </div>
+
   </div>
 
 </div>
