@@ -12,6 +12,10 @@ description: >
   <a href="https://orcid.org/0009-0004-7652-3358">ORCID</a> ·
   <a href="https://www.linkedin.com/in/yunpu-zeng-49568728a">LinkedIn</a>
 
-show_downloads: false
+url: "https://yunpuzeng.github.io"
 
+show_downloads: false
 theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-sitemap
