@@ -1,6 +1,5 @@
 ---
 layout: default
-title: About
 ---
 
 <nav class="site-nav">
